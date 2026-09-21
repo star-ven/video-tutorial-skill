@@ -38,6 +38,8 @@ def main() -> int:
         if path.is_file() and path.suffix.lower() in {".md", ".py", ".yaml", ".yml", ".txt"}
     ]
     combined = "\n".join(path.read_text(encoding="utf-8") for path in text_files)
+    account_placeholder = "<your" + "-account>"
+    check(account_placeholder not in combined, "不含发布占位符", failures)
     check(not re.search(r"[A-Za-z]:[\\/]Users[\\/]", combined), "不含本机用户目录", failures)
     check(not re.search(r"(?:ghp_|github_pat_|sk-)[A-Za-z0-9_-]{12,}", combined), "不含常见令牌", failures)
     check(not list(ROOT.rglob("*.docx")), "不包含用户文章", failures)

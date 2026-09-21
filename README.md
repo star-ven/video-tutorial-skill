@@ -18,7 +18,7 @@
 把仓库克隆到个人 Skill 目录：
 
 ```bash
-git clone https://github.com/<your-account>/video-tutorial-skill.git ~/.codex/skills/video-tutorial-skill
+git clone https://github.com/star-ven/video-tutorial-skill.git ~/.codex/skills/video-tutorial-skill
 ```
 
 也可以将目录放入某个项目的 `.agents/skills/video-tutorial-skill`。
