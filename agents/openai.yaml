@@ -1,0 +1,8 @@
+interface:
+  display_name: "视频拆解与复刻图文教程"
+  short_description: "将短视频真实拆解为可供小白复刻的图文教程 DOCX"
+  brand_color: "#2563EB"
+  default_prompt: "Use $video-tutorial-skill to inspect this creator link, recommend the right reproduction approach for confirmation, and then produce a factual Chinese image-and-text tutorial."
+
+policy:
+  allow_implicit_invocation: true
