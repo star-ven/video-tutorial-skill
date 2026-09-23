@@ -23,7 +23,9 @@ def main() -> int:
         "agents/openai.yaml",
         "references/workflow.md",
         "references/docx-standard.md",
+        "references/browser-access.md",
         "scripts/validate_article.py",
+        "scripts/build_workbuddy_package.py",
     ]
     check(all((ROOT / item).is_file() for item in required), "开源仓库文件齐全", failures)
 
